@@ -2,7 +2,7 @@ import express from 'express';
 const app = express();
 const PORT = process.env.PORT || 8000;
 import {client} from './client.js'
-import cors from 'cors';
+//import cors from 'cors';
 import dotenv from 'dotenv'
 dotenv.config();
 import path from 'path'
