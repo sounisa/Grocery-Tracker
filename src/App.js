@@ -14,10 +14,11 @@ function App() {
   const [editQty, setEditQty] = useState(null) //PATCH 1
   const [selectedItems, setSelectedItems] = useState([]); //CHECKMARK
 
+  const URL = '';
 
   useEffect(() => {
     const getData = async () => {
-      const response = await fetch('http://localhost:8000/items')
+      const response = await fetch(`${URL}/items`)
       const data = await response.json() 
       setItems(data)
   }
@@ -28,7 +29,7 @@ function App() {
 async function handleDeleteClick() {  
   if (deletedItems !== null) {
     try {
-      await fetch(`http://localhost:8000/items/${deletedItems[0]}`, {
+      await fetch(`${URL}/items/${deletedItems[0]}`, {
         method: 'DELETE',
       })
       console.log('Item Deleted')
@@ -44,7 +45,7 @@ handleDeleteClick()
 async function addToList() {
 
   try {
-      await fetch('http://localhost:8000/items', {
+      await fetch(`${URL}/items`, {
       method: 'POST',
       headers: {
         "Content-Type": "application/json"
@@ -63,7 +64,7 @@ async function addToList() {
 async function saveName() {  
   if (editName !== null) {
     try {
-      await fetch(`http://localhost:8000/items/${editName.item_id}`, {
+      await fetch(`${URL}/items/${editName.item_id}`, {
         method: 'PATCH',
         headers: {
           "Content-Type": "application/json"
@@ -85,7 +86,7 @@ saveName()
 async function saveQty() {  
   if (editQty !== null) {
     try {
-      await fetch(`http://localhost:8000/items/${editQty.item_id}`, {
+      await fetch(`${URL}/items/${editQty.item_id}`, {
         method: 'PATCH',
         headers: {
           "Content-Type": "application/json"
