@@ -1,4 +1,5 @@
 # Grocery List App
+![](https://file%2B.vscode-resource.vscode-cdn.net/Users/sounisaa/Desktop/Screenshot%202023-03-31%20at%205.37.28%20PM.png?version%3D1680309476791)
 
 Grocery List App is a simple grocery list tracker app that allows you to make a grocery list, check off the items you get, edit the items if they're spelled wrong, and delete items you do not need. 
 
