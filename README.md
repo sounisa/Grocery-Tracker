@@ -1,70 +1,54 @@
-# Getting Started with Create React App
+# Grocery List App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Grocery List App is a simple grocery list tracker app that allows you to make a grocery list, check off the items you get, edit the items if they're spelled wrong, and delete items you do not need. 
 
-## Available Scripts
+## Features
 
-In the project directory, you can run:
+- Add items to your grocery list
+- Check off items when you get them
+- Edit items if they're spelled wrong
+- Delete items you do not need
 
-### `npm start`
+## Dependencies
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+The app uses the following dependencies:
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- react: A JavaScript library for building user interfaces.
+- react-dom: A package that provides DOM-specific methods for working with React.
+- react-icons: A package that provides a collection of icons for React.
+- cors: A package that enables cross-origin resource sharing (CORS) for APIs built with Express.
+- dotenv: A package that loads environment variables from a .env file into process.env.
+- express: A fast, unopinionated, minimalist web framework for Node.js.
+- nodemon: A development utility that automatically restarts the Node.js server when changes are made to the codebase.
+- path: A module that provides utilities for working with file and directory paths.
+- pg: A PostgreSQL client for Node.js.
 
-### `npm test`
+## Getting Started
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+To run the app, follow these steps:
 
-### `npm run build`
+1. Clone this repository.
+2. Install dependencies with `npm install` in both the root directory and the backend directory.
+3. Run the app with `npm start` in the root directory.
+4. Create your own postgresSQL Database and seed the migration and seed files in the sql directory.
+5. Run the back-end Express server with `npm run start` in the backend directory.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Usage
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+To use the app, simply follow these steps:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+1. Add items to your grocery list using the input field.
+2. Check off items when you get them by clicking the checkbox next to the item.
+3. Edit items if they're spelled wrong by clicking the edit button next to the item.
+4. Delete items you do not need by clicking the delete button next to the item.
 
-### `npm run eject`
+<!-- ## Contributing
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Contributions are welcome! If you'd like to contribute to the project, please follow these steps:
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+1. Fork the repo
+2. Create a new branch (`git checkout -b feature/your-feature-name`)
+3. Make your changes
+4. Commit your changes (`git commit -m "Add some feature"`)
+5. Push to the branch (`git push origin feature/your-feature-name`)
+6. Create a new pull request -->
