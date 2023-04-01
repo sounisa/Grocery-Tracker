@@ -14,7 +14,7 @@ function App() {
   const [editQty, setEditQty] = useState(null) //PATCH 1
   const [selectedItems, setSelectedItems] = useState([]); //CHECKMARK
 
-  const URL = 'http://localhost:8000';
+  const URL = 'grocery-tracker-production-b9ac.up.railway.app';
 
   useEffect(() => {
     const getData = async () => {
