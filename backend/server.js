@@ -2,7 +2,7 @@ import express from 'express';
 const app = express();
 const PORT = process.env.PORT || 8000;
 import {client} from './client.js'
-//import cors from 'cors';
+import cors from 'cors';
 import dotenv from 'dotenv'
 dotenv.config();
 import path from 'path'
@@ -16,6 +16,7 @@ app.use(express.static(path.join(process.cwd(), '../build')))
 app.get('/', (req, res) => {
   res.sendFile(path.join(process.cwd(), '../build', 'index.html')); // serves the index.html file
 });
+
 
 //GET ALL
 app.get(`/items`, async (req, res) => {

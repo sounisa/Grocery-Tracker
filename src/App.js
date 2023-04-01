@@ -14,7 +14,7 @@ function App() {
   const [editQty, setEditQty] = useState(null) //PATCH 1
   const [selectedItems, setSelectedItems] = useState([]); //CHECKMARK
 
-  const URL = 'https://new-react-mvp-production.up.railway.app';
+  const URL = 'http://localhost:8000';
 
   useEffect(() => {
     const getData = async () => {

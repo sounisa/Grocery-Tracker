@@ -1,0 +1,24 @@
+# railway.toml
+
+[runtime]
+# Use Node.js v16.x (or another version supported by Railway)
+name = "nodejs"
+version = "16"
+
+# Build command for the front-end
+[build.frontend]
+command = "npm run build"
+# Set the working directory to your front-end directory
+working_directory = "src"
+
+# Build command for the back-end
+[build.backend]
+command = "npm install"
+# Set the working directory to your back-end directory
+working_directory = "backend"
+
+# Start command for the back-end
+[start]
+command = "npm run start"
+# Set the working directory to your back-end directory
+working_directory = "backend"
